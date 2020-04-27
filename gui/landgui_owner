@@ -1,0 +1,4 @@
+type=full,title=领地所有权管理,cb=LANDOWNER
+type=dropdown,text=你的操作,args=["添加某人到信任组","删除某人","完全转让给某人"]
+type=dropdown,text=要删除的人（如果操作不是删除请忽略）,args=%1
+type=dropdown,text=要添加或转让的人,args=%0

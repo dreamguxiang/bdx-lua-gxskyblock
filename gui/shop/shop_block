@@ -1,0 +1,12 @@
+type=simple,cb=shop_block_menu,title=方块商店,content=§9来点东西吗！
+text=§9石头
+text=§8圆石
+text=§7安山岩
+text=§6闪长岩
+text=§5花岗岩
+text=§b粘土
+text=§e沙子（仅出售）
+text=§f沙砾（仅出售）
+text=§d原木
+text=§a陶瓦
+text=§c混凝土

@@ -1,0 +1,5 @@
+type=full,title=转账面板,cb=MoneyGUI
+type=label,text=你目前的余额是 %1
+type=dropdown,text=目标玩家,args=%0
+type=input,text=你要转的钱数
+

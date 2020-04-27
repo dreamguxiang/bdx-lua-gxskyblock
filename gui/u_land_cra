@@ -1,0 +1,6 @@
+type=simple,cb=land_cra,title=领地帮助菜单,content=§3创建/查看一个领地
+text=选择A点
+text=选择B点
+text=购买领地
+text=查看领地
+text=返回菜单

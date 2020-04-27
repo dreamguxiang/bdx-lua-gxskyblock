@@ -1,0 +1,13 @@
+type=full,cb=LANDGUIPERM,title=领地权限控制
+type=toggle,def=%1,text=和生物互动（以下为信任成员）
+type=toggle,def=%2,text=空手点击
+type=toggle,def=%3,text=攻击
+type=toggle,def=%4,text=建造
+type=toggle,def=%5,text=破坏
+type=toggle,def=%6,text=展示框互动
+type=toggle,def=%7,text=和生物互动（以下为他人）
+type=toggle,def=%8,text=空手点击
+type=toggle,def=%9,text=攻击
+type=toggle,def=%10,text=建造
+type=toggle,def=%11,text=破坏
+type=toggle,def=%12,text=展示框互动

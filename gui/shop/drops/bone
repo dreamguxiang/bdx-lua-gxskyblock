@@ -1,0 +1,3 @@
+type=full,title=骨头商人,cb=shop_drops_bone
+type=dropdown,text=类型,args=["回收 1铁币"]
+type=slider,text=数量,min=1,max=64,def=1

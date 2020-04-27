@@ -1,0 +1,4 @@
+type=full,title=沙子商人,cb=shop_block_sand
+type=dropdown,text=物品,args=["黄沙","红沙"]
+type=dropdown,text=类型,args=["回收 1铁币"]
+type=slider,text=数量,min=1,max=64,def=1

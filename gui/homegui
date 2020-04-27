@@ -1,0 +1,4 @@
+type=full,cb=HomeGUI,title=家园系统
+type=dropdown,text=操作,args=["回家","删家"]
+type=dropdown,text=家,args=%1
+

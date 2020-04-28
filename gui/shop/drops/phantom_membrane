@@ -1,3 +1,0 @@
-type=full,title=幻翼膜商人,cb=shop_drops_phantom_membrane
-type=dropdown,text=类型,args=["回收 4铁币"]
-type=slider,text=数量,min=1,max=64,def=1

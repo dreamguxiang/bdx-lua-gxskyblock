@@ -1,8 +1,0 @@
-type=full,cb=createshop,title=创建商店
-type=input,text=GUI文件名
-type=input,text=商店名字
-type=input,text=物品ID
-type=input,text=特殊值
-type=input,text=回收单价
-type=input,text=出售单价
-

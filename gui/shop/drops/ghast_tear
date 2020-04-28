@@ -1,3 +1,0 @@
-type=full,title=恶魂之泪商人,cb=shop_drops_ghast_tear
-type=dropdown,text=类型,args=["回收 3铁币"]
-type=slider,text=数量,min=1,max=64,def=1

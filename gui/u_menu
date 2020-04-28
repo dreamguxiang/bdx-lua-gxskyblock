@@ -1,8 +1,0 @@
-type=simple,cb=jx520,title=MCBE FINE,content=§5全局菜单！
-text=§a基础菜单,img=textures/ui/icon_deals
-text=§9回到死亡点,img=textures/ui/heart_new
-text=§b热门活动,img=textures/ui/gift_square
-text=§c传送菜单,img=textures/ui/icon_rail_normal
-text=§d经济菜单,img=textures/ui/icon_crafting
-text=§e领地菜单,img=textures/ui/icon_recipe_nature
-text=§9关于我们,img=textures/ui/icon_sign

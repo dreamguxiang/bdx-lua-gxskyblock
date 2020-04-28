@@ -1,3 +1,0 @@
-type=full,title=查背包,cb=invecheckGUI
-type=dropdown,text=操作,args=["背包","末影箱"]
-type=dropdown,text=目标玩家,args=%0

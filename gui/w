@@ -1,5 +1,0 @@
-type=full,cb=w,title=私聊
-type=label,text="悄悄对"
-type=dropdown,text=对(选择玩家),args=%0
-type=input,text=说
-

@@ -1,4 +1,0 @@
-type=full,cb=homeadd,title=添加家园
-type=label,text="添加一个家（最多7个）您的ID:%0"
-type=input,text=家的名称
-

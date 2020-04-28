@@ -1,6 +1,0 @@
-type=simple,cb=post,title=传送菜单,content=§2传送菜单就是这个啦！
-text=§6家园传送,img=textures/ui/recipe_book_icon
-text=§6设置家园,img=textures/ui/icon_recipe_item
-text=§5地标传送,img=textures/ui/world_glyph_color_2x_black_outline
-text=§C玩家传送,img=textures/ui/icon_multiplayer
-text=返回菜单

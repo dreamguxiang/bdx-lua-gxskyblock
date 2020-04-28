@@ -1,3 +1,0 @@
-type=full,title=gui商店,cb=gou_mai_main
-type=dropdown,text=物品,args=["铁"]
-type=slider,text=购买数量,min=0,max=64,def=1

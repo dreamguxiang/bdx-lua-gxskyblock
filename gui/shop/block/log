@@ -1,4 +1,0 @@
-type=full,title=橡木商人,cb=shop_block_log
-type=dropdown,text=物品,args=["橡木","云杉木","白桦木","从林木","金合欢木","深色橡木"]
-type=dropdown,text=类型,args=["回收 4铁币","购买 6铁币"]
-type=slider,text=数量,min=1,max=64,def=1

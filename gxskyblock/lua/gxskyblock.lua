@@ -22,17 +22,14 @@ function skyz()
     file:close()
     return skyz
 end
-function clone(name)
+function clone()
     local x = skyx()
     local y = skyy()
     local z = skyz()
-    print(x)
-    print(z)
-    runCmd('clone -8 1 7 5 16 -5 '..x..' '..y..' '..z..'')
+    runCmd('clone -8 0 7 5 16 -5 '..x..' '..y..' '..z..'')
 end
-
 event.Filter("CMD","kd create",true,function(name,a)
-    if dget(name,"ceshi111r132") == "true" then
+    if dget(name,"dream1") == "true" then
         sendText(name,"§c你已经领过岛屿或者已加入他人岛屿")
         else
             local jl = math.random(1800,3600)
@@ -57,25 +54,49 @@ event.Filter("CMD","kd create",true,function(name,a)
             runCmd('tp '..name..' '..skyx..' '..skyy..' '..skyz..'')
             runCmd('spawnpoint '..name..' '..skyx..' '..skyy..' '..skyz..'')
             schedule("clone",0,1)
-            local files = io.open("gxPlugin/gxskyblock/skyblcoklist.json","a+")
             local zb = string.format("%d %d %d",skyx,skyy,skyz)
-            local file = io.open("gxPlugin/gxskyblock/skyblcoklist.json","r+")
-            local content = file:read("*a")
-            local q = string.format("%s","}")
-            local contentlen = string.len(content)
-            local tlen = string.len(q)
+            file = io.open('gxPlugin/gxskyblock/players/'..name..'-'..name..'.json',"w+")
+            local msg = string.format('{\n\"name\":["%s"],\n\"local\":["%s"]\n}',name,zb)
+            file:write(msg)
             file:close()
-            local s_len = contentlen - tlen - 1
-            local str = string.sub(content,0,s_len)
-            file = io.open("gxPlugin/gxskyblock/skyblcoklist.json","w")
-            file:write(str)
-            file:close()
-            local files = io.open("gxPlugin/gxskyblock/skyblcoklist.json","a+")
-            local msg = string.format(",\n\"%s\":[\"%s\"]\n}",name,zb)
-            files:write(msg)
-            files:close()
-            dput(name,"ceshi11111132","true")
+            dput(name,"dream1","true")
             sendText(name,"§6创建空岛成功！")
     end
 return -1
 end)
+event.Filter("CMD","kd del",true,function(name,a)
+    if dget(name,"dream1") == "true" then
+        sendText(name,"§6你确认要删除你的空岛吗，确定输入/kd confirm，取消输入/kd exit，你一共有15秒的时间考虑！")
+        dput(name,"confirm1","true")
+        schedule("delconfirm",0,30)
+        kdkdname = name
+    else
+        sendText(name,"§c你还没有空岛！")
+    end
+return -1
+end)
+function delconfirm()
+    if dget(name,"confirm1") == "true" then
+        dput(kdkdname,"confirm1",false)
+        sendText(kdkdname,"§c请求超时")
+    end
+end
+function scxt(name,cmd)
+    if dget(name,"confirm1") == "true" then
+        if cmd == "kd confirm" then
+            sendText(name,"§6删除空岛成功！")
+            runCmd('tp '..name..' 0 64 0')
+            runCmd('spwanponit 0 64 0')
+            dput(name,"dream1","false")
+            dput(name,"confirm1","false")
+        return -1
+        else
+            if cmd == "kd exit" then
+                sendText(name,"§6取消删除！")
+                dput(name,"confirm1","false")
+                return -1
+             end
+        end
+    end
+end
+Listen("onCMD","scxt")
